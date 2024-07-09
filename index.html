@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="scripts.js"></script>
+		<title>alphamotorstt.com</title>
+	</head>
+	<body>
+		<div class="box">
+			<img src="images/header/audi-black.jpg" title="Audi Black and Chrome Grille" style="width:100%;">
+				<div class="centered">
+					<h1>Alpha Motors</h1>
+				</div>
+		</div>
+	<br>	
+	<hr>
+	<br>
+	<!-- Container for the image gallery -->
+		<div class="container">
+
+	<!-- Full-width images with number text -->
+			<div class="mySlides">
+				<div class="numbertext">1 / 6</div>
+					<img src="images/black-chevrolet-corvette.jpg"  title="Black Chevrolet Corvette" style="width:100%">
+				</div>
+
+			<div class="mySlides">
+				<div class="numbertext">2 / 6</div>
+					<img src="images/white-range-rover-suv.jpg"  title="White Range Rover SUV" style="width:100%">
+				</div>
+
+			<div class="mySlides">
+				<div class="numbertext">3 / 6</div>
+					<img src="images/black-lamborghini.jpg"  title="Black Lamborghini" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">4 / 6</div>
+					<img src="images/red-alfa-romeoC4.jpg"  title="Red Alfa Romeo C4" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">5 / 6</div>
+					<img src="images/blue-audi-sedan.jpg"  title="Blue Audi Sedan" style="width:100%">
+			</div>
+  
+			<div class="mySlides">
+				<div class="numbertext">6 / 6</div>
+					<img src="images/black-convertible-coupe.jpg"  title="Black Convertible Coupe" style="width:100%">
+			</div>
+
+	<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	<!-- Image text -->
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+			
+	<!-- Thumbnail images -->
+			<div class="row">
+				<div class="column">
+					<img class="trans cursor" src="images/small-corvette.jpg" style="width:100%" onload="currentSlide(1)" onmouseover="currentSlide(1)" alt="Black Chevrolet Corvette">
+				</div>
+				
+				<div class="column">
+					<img class="trans cursor" src="images/small-range.jpg" style="width:100%" onclick="currentSlide(2)" onmouseover="currentSlide(2)" alt="White Range Rover SUV">
+				</div>
+				
+				<div class="column">
+					<img class="trans cursor" src="images/small-lamborghini1.jpg" style="width:100%" onclick="currentSlide(3)" onmouseover="currentSlide(3)" alt="Black Lamborghini">
+				</div>
+				
+				<div class="column">
+					<img class="trans cursor" src="images/small-red1.jpg" style="width:100%" onclick="currentSlide(4)" onmouseover="currentSlide(4)" alt="Red Alfa Romeo C4">
+				</div>
+				
+				<div class="column">
+					<img class="trans cursor" src="images/small-blue.jpg" style="width:100%" onclick="currentSlide(5)" onmouseover="currentSlide(5)" alt="Blue Audi Sedan">
+				</div>
+				
+				<div class="column">
+					<img class="trans cursor" src="images/small-convertible1.jpg" style="width:100%" onclick="currentSlide(6)" onmouseover="currentSlide(6)" alt="Black Convertible Coupe">
+				</div>
+			</div>
+		</div>	
+	<br>
+	<hr>
+	<br>
+		<!--             3 Button Tabs             -->
+
+		<div id="tab1" onClick="JavaScript:selectTab(1);">Our Showroom</div>
+		<div id="tab2" onClick="JavaScript:selectTab(2);">About</div>
+		<div id="tab3" onClick="JavaScript:selectTab(3);">Contact</div>
+		<br/>
+
+		<div id="tab1Content">
+			<address>#1 Alpha Drive, Invaders Bay, Trinidad and Tobago</address>
+			<br>
+			<img src="images/showroom.jpg" width="1000" height="600" alt="alphamotorsShowroom">  
+		</div>
+		
+		<div id="tab2Content">
+			<h3>About US</h3>
+			<p>
+			Alpha Motors is an importer of exclusive new and vintage vehicles 
+			from high-end manufacturers such as Ferrari, Lamborghini, Koenigsegg, 
+			Rolls Royce, Bentley and Aston Martin.
+			</p>
+		</div>
+		
+		<div id="tab3Content">
+			<h3>Contact Us</h3>
+			<p>Number: 888-AUTO  | Email: contact@alphamotorstt.com</p>
+				<div class="form-container">
+					<form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+
+					<label for="fname">First Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your name.." autofocus>
+
+					<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+					<label for="email">Email Address</label>
+						<input type="text" id="email" name="Email Address" placeholder="someone@gmail.com">
+
+					<label for="message">Message</label>
+						<textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+
+					<input type="submit" value="Submit">
+
+				</form>
+			</div>
+		</div>	
+	</body>
+</html>

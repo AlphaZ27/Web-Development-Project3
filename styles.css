@@ -1,0 +1,202 @@
+/*  Color options
+        Light    Dark
+white: #ffffff, #f5f5f5
+brown: #c47a54, #933f15
+gold: #FFD700, #e6c300
+grey: #f1f1f1, #8c8c8c
+
+*/
+
+/* *********************   HTML Elements   ********************* */
+* {
+	box-sizing: border-box;
+}
+
+hr{
+	background-image: linear-gradient(to right, #f1f1f1, #b33c00, #FFD700, #FFD700, #e6c300);
+	size: 50px;
+}
+body {
+	font-family: "Courier New", Courier, monospace;
+	
+}
+
+
+/* ***************************   CLASSES    *********************** */
+/*  Header  */
+.box {
+	position: relative;
+	margin: auto;
+	text-align: center;
+	color: white;
+	font-family: "Days one", Droid sans mono;
+	font-size: 25px;
+}
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	background: rgb(0, 0, 0); /* Fallback color */
+	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+	color: #f1f1f1;
+	width: 50%;
+	padding: 20px;
+}
+
+
+
+/*          Image Gallery           */
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+/* Add a transparency effect for thumnbail images */
+.trans {
+  opacity: 0.6;
+}
+/* Removes the transparency effect on the thumbnail image */
+.active,
+.trans:hover {
+  opacity: 1;
+}
+
+
+
+/*              Form                */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	width: 100%;					/* Full width */
+	padding: 12px;     				/* Some padding */ 
+	border: 1px solid #ccc; 		/* Gray border */
+	border-radius: 4px; 			/* Rounded borders */
+	box-sizing: border-box; 		/* Make sure that padding and width stays in place */
+	margin-top: 6px; 				/* Add a top margin */
+	margin-bottom: 16px; 			/* Bottom margin */
+	resize: vertical 				/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+	background-color: #e6c300;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+/* When moving the mouse over the submit button, add a darker color */
+input[type=submit]:hover {
+	background-color: #FFD700;
+	color: #f5f5f5;
+}
+/* Add a background color and some padding around the form */
+.form-container {
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 100px;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-image: linear-gradient( to right, #8c8c8c, #8c8c8c, #b33c00, #FFD700, #e6c300) ;
+}
+
+
+
+
+/* *************************************  ID's  ************************************* */
+/*          3 Button Tabs           */
+#tab1, #tab2, #tab3 {
+  float: left;
+  padding: 14px 16px;
+  font-size: 21px;
+  background: grey;
+  color: #FFFFFF;
+  text-align: centre;
+  cursor: pointer;
+  border-radius: 8px; /* rounded border */
+  margin-right: 1px;
+  width: 33%;
+}
+
+#tab1:hover, #tab2:hover, #tab3:hover {
+  background-color: #FFD700;
+  color: #c47a54;
+}
+
+#tab1Content, #tab2Content, #tab3Content {
+  height: 100%;
+  padding: 100px 20px;;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  background-color: #8c8c8c;
+  font-size: 30px;
+}
+
+#tab1Content {
+ display: block; 
+}
+
+#tab2Content, #tab3Content {
+ display: none; 
+}
